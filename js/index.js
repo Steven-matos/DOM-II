@@ -90,9 +90,17 @@ const el = document.querySelector('.intro img');
 el.onwheel = zoom;
 
 
+// Propagation 
+const outterContainer = document.querySelector('.content-section');
+outterContainer.addEventListener('click', () => {
+    outterContainer.style.backgroundColor = 'purple';
+})
 
-
-
+const innerContainer = document.querySelector('.text-content');
+innerContainer.addEventListener('click', (event) => {
+    innerContainer.style.backgroundColor = 'salmon';
+    event.stopPropagation();
+})
 
 // prevent refresh
 
