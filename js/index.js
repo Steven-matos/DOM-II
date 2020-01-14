@@ -38,9 +38,9 @@ document.querySelectorAll('.btn').forEach(elem => {
 
 // 6) onload
 
-// window.onload = () => {
-//     document.querySelector("#my_audio").play();
-// }
+window.onload = () => {
+    document.querySelector("#my_audio").play();
+}
 
 // 7) mouseover
 
